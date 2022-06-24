@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoogleSignInActivity">
+
+
+<EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin"
+        android:background="#30ffffff"
+
+        android:drawablePadding="20dp"
+        android:hint="Username"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:layout_editor_absoluteX="-26dp"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sign in"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <TextView
+        android:id="@+id/text_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:text="Login WITH GOOGLE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_display_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
